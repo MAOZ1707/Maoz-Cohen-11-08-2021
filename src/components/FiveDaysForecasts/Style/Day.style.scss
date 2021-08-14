@@ -1,0 +1,51 @@
+.day-item-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding: 10px;
+  backdrop-filter: blur(3.7px);
+  -webkit-backdrop-filter: blur(3.7px);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  background-image: linear-gradient(
+    155deg,
+    rgba(255, 255, 255, 0.21),
+    rgba(255, 255, 255, 0)
+  );
+  border-radius: 0px;
+  border-top: 0.2px solid rgba(255, 255, 255, 0.16);
+  border-left: 0.2px solid rgba(255, 255, 255, 0.16);
+
+  @media (min-width: 1140px) {
+    width: 200px;
+  }
+
+  p {
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+
+  width: 100%;
+  .day-info-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .day-info-temp {
+    display: flex;
+    align-items: center;
+    font-size: 0.7rem;
+    font-weight: 500;
+    margin-top: 10px;
+    justify-content: center;
+  }
+  .day-info-day {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 150px;
+  }
+  span {
+    margin: 0 10px;
+  }
+}

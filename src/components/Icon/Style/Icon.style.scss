@@ -1,0 +1,8 @@
+.nav_links-icon {
+  flex: 1;
+  color: aliceblue;
+
+  @media (max-width: 600px) {
+    display: none;
+  }
+}

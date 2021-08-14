@@ -1,0 +1,77 @@
+.day-item-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+  padding: 10px;
+  backdrop-filter: blur(3.7px);
+  -webkit-backdrop-filter: blur(3.7px);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  background-image: linear-gradient(155deg, rgba(255, 255, 255, 0.21), rgba(255, 255, 255, 0));
+  border-radius: 0px;
+  border-top: 0.2px solid rgba(255, 255, 255, 0.16);
+  border-left: 0.2px solid rgba(255, 255, 255, 0.16);
+  width: 100%;
+}
+
+@media (min-width: 1140px) {
+  .day-item-container {
+    width: 200px;
+  }
+}
+
+.day-item-container p {
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.day-item-container .day-info-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.day-item-container .day-info-temp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.7rem;
+  font-weight: 500;
+  margin-top: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.day-item-container .day-info-day {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 150px;
+}
+
+.day-item-container span {
+  margin: 0 10px;
+}
+/*# sourceMappingURL=Day.style.css.map */

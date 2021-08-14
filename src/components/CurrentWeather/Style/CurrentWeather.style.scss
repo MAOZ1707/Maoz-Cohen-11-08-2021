@@ -1,0 +1,74 @@
+.current_weather-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  grid-area: current;
+
+  @media (min-width: 1000px) {
+    padding: 0 80px;
+  }
+  @media (min-width: 1400px) {
+    padding: 0 300px;
+  }
+
+  .current_weather-head {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  .current_weather-head-left {
+    width: 100px;
+    .current_weather-location {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 5px;
+      width: max-content;
+      font-size: 1rem;
+      span {
+        display: flex;
+        width: 100px;
+        width: max-content;
+      }
+    }
+  }
+
+  .current_weather-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .current_weather-time-temp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .current_weather-time {
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+
+  .current_weather-temp-wrapper {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+
+    span:nth-child(2) {
+      font-size: 0.8rem;
+      margin-left: 1px;
+    }
+
+    p {
+      margin-left: 10px;
+      font-weight: 500;
+    }
+  }
+}

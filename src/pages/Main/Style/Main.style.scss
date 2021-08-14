@@ -1,0 +1,22 @@
+.main-page {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto 1fr;
+  grid-template-areas:
+    "search search  "
+    "current current "
+    "fiveDays fiveDays ";
+
+  @media (min-width: 1140px) {
+    padding: 0 40px;
+    grid-template-areas:
+      "search search  "
+      "current current "
+      "fiveDays fiveDays ";
+  }
+
+  @media (min-width: 600px) {
+    padding: 0 20px;
+  }
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,oBAAoB,CAAC;EACnB,IAAI,EAAE,CAAC;EACP,WAAW,EAAE,IAAI;EACjB,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;EACnB,WAAW,EAAE,MAAM;CAYpB;;AAjBD,AAME,oBANkB,CAMlB,KAAK,CAAC;EACJ,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,MAAM;CAOxB;;AAhBH,AAWI,oBAXgB,CAMlB,KAAK,CAKH,GAAG,CAAC;EACF,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,MAAM;CACxB",
+    "sources": [
+        "ToggleTheme.style.scss"
+    ],
+    "names": [],
+    "file": "ToggleTheme.style.css"
+}

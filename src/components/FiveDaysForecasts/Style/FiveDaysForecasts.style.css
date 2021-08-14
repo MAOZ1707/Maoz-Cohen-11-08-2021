@@ -1,0 +1,46 @@
+.five_days-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+  -ms-flex-item-align: start;
+      align-self: start;
+  padding: 0 10px;
+  grid-area: fiveDays;
+}
+
+@media (min-width: 900px) {
+  .five_days-wrapper {
+    padding: 0 60px;
+  }
+}
+
+@media (min-width: 1140px) {
+  .five_days-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .five_days-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+/*# sourceMappingURL=FiveDaysForecasts.style.css.map */

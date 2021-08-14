@@ -1,0 +1,13 @@
+.nav_links-icon {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: aliceblue;
+}
+
+@media (max-width: 600px) {
+  .nav_links-icon {
+    display: none;
+  }
+}
+/*# sourceMappingURL=Icon.style.css.map */

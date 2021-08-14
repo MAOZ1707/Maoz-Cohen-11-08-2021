@@ -1,0 +1,18 @@
+.header-theme-switch {
+  flex: 1;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
