@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const key = "yz8v39dRStfWTKKWi83ZfQ8LqBpwGbo3";
-const baseUrl = "http://dataservice.accuweather.com";
+const baseUrl = "https://dataservice.accuweather.com";
 
 export const searchCity = (city) => {
   return axios.get(`${baseUrl}/locations/v1/cities/autocomplete`, {
