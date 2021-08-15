@@ -27,10 +27,9 @@ function App() {
   useEffect(() => {
     if (location.loaded && !location.error) {
       dispatch(getCityByNameByCoordinates(location.coordinates));
+    } else {
+      dispatch(getCityByName("tel aviv"));
     }
-    // else {
-    //   // dispatch(getCityByName("tel aviv"));
-    // }
   }, [dispatch, location.coordinates, location.error, location.loaded]);
 
   const routes = (
