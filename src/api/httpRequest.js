@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const key = "GZPkZvFFxrHOiJQBgJAQ4xGZsuPWV2oy";
-const baseUrl = "http://dataservice.accuweather.com";
+const baseUrl = process.env.REACT_APP_ACC_WEATHER_BASE_URL;
 
 export const searchCity = (city) => {
   return axios.get(`${baseUrl}/locations/v1/cities/autocomplete`, {

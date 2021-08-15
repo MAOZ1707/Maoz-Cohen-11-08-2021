@@ -60,8 +60,9 @@ export const weatherReducer = (state = initialState, action) => {
       return {
         ...state,
         isForecastLoading: false,
-        foreCastError: false,
+        foreCastError: null,
         weatherStatus: "",
+        dailyError: null,
       };
     default:
       return state;

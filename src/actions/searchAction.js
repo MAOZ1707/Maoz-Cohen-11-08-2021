@@ -7,7 +7,7 @@ export const getCityByName = (city) => {
     if (!city) {
       dispatch({
         type: types.GET_CURRENT_WEATHER_ERROR,
-        payload: "Please provide city ",
+        payload: "Please provide city",
       });
     }
 

@@ -10,7 +10,7 @@ import { useTheme } from "../../context/ThemeProvider";
 
 const FavoritesButton = ({ children }) => {
   const [isFavorite, setIsFavorite] = useState(false);
-  const { theme, themeMode, setThemeMode } = useTheme();
+  const { theme, themeMode } = useTheme();
   const { dailyWeather } = useSelector((state) => state.weather);
   const { favoriteError, favoritesList } = useSelector(
     (state) => state.favorite

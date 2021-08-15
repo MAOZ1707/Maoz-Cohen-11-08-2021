@@ -12,7 +12,7 @@ const actionCreator = (type, payload = null) => {
 export const getCityWeather = (city) => {
   return async (dispatch) => {
     if (!city) {
-      const errorMessage = "Please search city";
+      const errorMessage = "Please provide city";
       return dispatch(
         actionCreator(types.GET_CURRENT_WEATHER_ERROR, errorMessage)
       );

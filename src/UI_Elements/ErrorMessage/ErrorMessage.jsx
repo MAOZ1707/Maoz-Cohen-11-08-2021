@@ -11,10 +11,11 @@ const ErrorMessage = ({ msg, type }) => {
   useEffect(() => {
     if (msg) {
       setShowMessage(true);
+      dispatch({ type: type });
 
       let timer = setTimeout(() => {
-        dispatch({ type: type });
         setShowMessage(false);
+        dispatch({ type: "CLEAR_STATE" });
       }, 5000);
 
       return () => {

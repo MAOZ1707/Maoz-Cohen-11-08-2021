@@ -6,6 +6,7 @@ import { getCityByName } from "../../actions/searchAction";
 import { withStyles } from "@material-ui/core";
 
 import "./Style/Search.style.css";
+import ErrorMessage from "../../UI_Elements/ErrorMessage/ErrorMessage";
 const CssTextField = withStyles({
   root: {
     "& .MuiFormLabel-root": {
@@ -34,6 +35,7 @@ const CssTextField = withStyles({
 
 const Search = () => {
   const [input, setInput] = useState("");
+  const { dailyError } = useSelector((state) => state.weather);
   const dispatch = useDispatch();
 
   const handleChange = (e) => {
@@ -51,20 +53,25 @@ const Search = () => {
   };
 
   return (
-    <div className="main-search">
-      <CssTextField
-        onChange={handleChange}
-        id="outlined-basic"
-        label="Search City"
-        variant="outlined"
-        size="small"
-      />
-      <button
-        className="main-search-btn"
-        onKeyPress={handleSearch}
-        onClick={handleSearch}>
-        Find
-      </button>
+    <div className="main-search-container">
+      {dailyError && (
+        <ErrorMessage msg={dailyError} type="CLEAR_FAVORITE_ERROR" />
+      )}
+      <div className="main-search">
+        <CssTextField
+          onChange={handleChange}
+          id="outlined-basic"
+          label="Search City"
+          variant="outlined"
+          size="small"
+        />
+        <button
+          className="main-search-btn"
+          onKeyPress={handleSearch}
+          onClick={handleSearch}>
+          Find
+        </button>
+      </div>
     </div>
   );
 };

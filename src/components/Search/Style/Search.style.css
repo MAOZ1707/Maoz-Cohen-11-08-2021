@@ -1,3 +1,19 @@
+.main-search-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  grid-area: search;
+}
+
 .main-search {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11,7 +27,6 @@
           justify-content: center;
   margin-top: 20px;
   color: #fff;
-  grid-area: search;
 }
 
 .main-search .MuiInputBase-input {
